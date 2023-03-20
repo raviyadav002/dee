@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import { useEffect } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Prelodder from "./components/Prelodder";
+import Header from "../src/components/Header";
+import Work from "../src/components/Work";
+import Should from "../src/components/Should";
+import Choose from "../src/components/Choose";
+import Testimonals from "../src/components/Testimonals";
+import Footer from "../src/components/Footer";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 function App() {
+  // useEffect(() => {
+  //   AOS.init({
+  //     once: true,
+  //   });
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Prelodder />
+      <Header />
+      <Work />
+      <Should />
+      <Choose />
+      <Testimonals />
+      <Footer />
+    </>
   );
 }
 
